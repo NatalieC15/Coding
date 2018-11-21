@@ -1,2 +1,3 @@
 Test file to upload to Github
 File edited to test push feature back to Github
+Do we need to do Git fetch before Git pull in order to transfer updated file from different laptop
