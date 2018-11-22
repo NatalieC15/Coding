@@ -19,9 +19,9 @@ print(ET.tostring(root, encoding='utf8').decode('utf8'))
 for exon in root.findall(".//fixed_annotation/transcript/exon"):
 	label = exon.get('label')
 	coordinates = exon.find('coordinates')
-    start = coordinates.get('start')
-    end = coordinates.get('end')
-    print (label, start, end)
+	start = coordinates.get('start')
+	end = coordinates.get('end')
+	print (label, start, end)
 
 #Finding the chromosome number, start and end coordinates within the XML file, this finds the build number GRCh37.p13. May not converse for every file.
 #May need to find a way to pull only the GRCh37 build in the future.
