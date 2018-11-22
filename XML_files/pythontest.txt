@@ -1,6 +1,6 @@
 #importing ElementTree and parsing the XML file
 import xml.etree.ElementTree as ET
-tree = ET.parse('LRG_1.xml')
+tree = ET.parse('LRG_16.xml')
 root = tree.getroot()
 
 root.attrib
