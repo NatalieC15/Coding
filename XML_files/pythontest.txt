@@ -13,3 +13,12 @@ for child in root:
 
 print(ET.tostring(root, encoding='utf8').decode('utf8'))
 #output is the tree structure to base further work on
+
+#This is code to find the exon start and end coordinates (after much error, all it takes is an extra /)
+#".// - must have 2 /'s to get label information.
+for exon in root.findall(".//fixed_annotation/transcript/exon"):
+	label = exon.get('label')
+	coordinates = exon.find('coordinates')
+    start = coordinates.get('start')
+    end = coordinates.get('end')
+    print (label, start, end)
