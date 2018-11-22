@@ -32,3 +32,7 @@ for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type
 	chromend = mapping.get('other_end')
 	print(chrom, chromstart, chromend)
 
+#Code to extract the gene name
+for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
+     lrg_locus = annotation_set.find('lrg_locus')
+     print(lrg_locus.text)
