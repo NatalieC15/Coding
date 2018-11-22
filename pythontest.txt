@@ -1,6 +1,0 @@
-#import ElementTree library and parse the XML file.
-import xml.etree.ElementTree as ET
-tree = ET.parse('LRG_1.xml')
-root = tree.getroot()
-print(tree)
-
