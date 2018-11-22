@@ -1,0 +1,15 @@
+#importing ElementTree and parsing the XML file
+import xml.etree.ElementTree as ET
+tree = ET.parse('LRG_1.xml')
+root = tree.getroot()
+
+root.attrib
+#{'schema_version': '1.9'} - this was the result of looking at the root attribute
+
+for child in root:
+     print(child.tag, child.attrib)
+#fixed_annotation {}
+#updatable_annotation {} - these were both results from looking at the root child relationship
+
+print(ET.tostring(root, encoding='utf8').decode('utf8'))
+#output is the tree structure to base further work on
