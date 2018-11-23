@@ -36,7 +36,9 @@ for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type
 	chrom = mapping.get('other_name')
 	chromstart = mapping.get('other_start')
 	chromend = mapping.get('other_end')
-	print(chrom, chromstart, chromend)
+
+##Use the print function to test the at the correct values for chromosome number, genomic start and end coordinates.
+#print(chrom, chromstart, chromend)
 
 #Code to extract the gene name
 for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
