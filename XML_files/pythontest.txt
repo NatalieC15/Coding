@@ -45,3 +45,10 @@ for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type
      lrg_locus = annotation_set.find('lrg_locus')
      print(lrg_locus.text)
 
+#Creation of the .bed file
+f = open("lrg.bed", "w")
+f.write("Chrom" + "\t" + "Start" + "\t" + "End" + "\n")
+for i in range(len(start)):
+	f.write(str(chrom) + "\t" + str(start[i]) + "\t" + str(end[i]) + "\n")
+
+f.close()
