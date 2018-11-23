@@ -16,6 +16,10 @@ print(ET.tostring(root, encoding='utf8').decode('utf8'))
 
 #This is code to find the exon start and end coordinates (after much error, all it takes is an extra /)
 #".// - must have 2 /'s to get label information.
+start =[]
+end = []
+label = []
+#creation of lists
 for exon in root.findall(".//fixed_annotation/transcript/exon"):
 	label = exon.get('label')
 	coordinates = exon.find('coordinates')
@@ -25,6 +29,10 @@ for exon in root.findall(".//fixed_annotation/transcript/exon"):
 
 #Finding the chromosome number, start and end coordinates within the XML file, this finds the build number GRCh37.p13. May not converse for every file.
 #May need to find a way to pull only the GRCh37 build in the future.
+chrom = []
+chromstart = []
+chromend = []
+#creation of lists 
 for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
 	mapping = annotation_set.find('mapping')
 	chrom = mapping.get('other_name')
