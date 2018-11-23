@@ -28,11 +28,7 @@ for exon in root.findall(".//fixed_annotation/transcript/exon"):
 	print (label, start, end)
 
 #Finding the chromosome number, start and end coordinates within the XML file, this finds the build number GRCh37.p13. May not converse for every file.
-#May need to find a way to pull only the GRCh37 build in the future.
-chrom = []
-chromstart = []
-chromend = []
-#creation of lists 
+#May need to find a way to pull only the GRCh37 build in the future. 
 for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
 	mapping = annotation_set.find('mapping')
 	chrom = mapping.get('other_name')
@@ -44,3 +40,4 @@ for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type
 for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
      lrg_locus = annotation_set.find('lrg_locus')
      print(lrg_locus.text)
+
