@@ -1,6 +1,26 @@
+#Choosing the LRG file to obtain the chromosome number of the gene and the exon start and stop coordinates after downloading the file of interest from the LRG website
+#Below is a test for entering the correct file name as a number
+#The test works for when you have a downloaded file with the correct file name
+#There is currently a traceback error when a non-numerical value is entered saying the LRG_file_name is not defined need to break the code so it loops back to the input question
+#Need to add an error message to check that the user has downloaded the correct file from the LRG website
+LRG_file_number = input('Enter LRG file number of interest: ')
+try:
+	LRG_file_number = int(LRG_file_number)
+
+	LRG_file_number = str(LRG_file_number)
+	LRG_file_name = 'LRG_' + LRG_file_number + '.xml'
+
+
+#Below is a test to check the the LRG_file_name was written correctly
+	print(LRG_file_name)
+
+except:
+	print('Error, please enter numeric input')
+
+
 #importing ElementTree and parsing the XML file
 import xml.etree.ElementTree as ET
-tree = ET.parse('LRG_120.xml')
+tree = ET.parse(LRG_file_name)
 root = tree.getroot()
 
 root.attrib
