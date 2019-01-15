@@ -27,7 +27,24 @@ The first column contains the chromosome number, the second the start position a
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
 ## Running the code
-After installing the required programmes. Using the gitBash programme, the cd command should be used to move to the correct directory that contains both the XML file of interest.
+After installing the required programmes. Using the GitBash programme, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.txt. As a check to determine that the user is in the correct directory the ls command should be used. See below:
+```
+~
+$ cd Desktop/Coding/XML_files/
+~/Desktop/Coding/XML_files (master)
+$ ls
+```
+The output of this code would be:
+```
+LRG_1.xml pythontest.txt
+```
+To run the code python should be used. Below is an example of how to run the programme and what the output of this should be:
+```
+~/Desktop/Coding/XML_files (master)
+$ python pythontest.txt
+Enter LRG file number of interest: 
+```
+
 the Explain how to run the automated tests for this system
 ```
 What does the code do? 
