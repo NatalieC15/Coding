@@ -26,7 +26,7 @@ The first column contains the chromosome number, the second the start position a
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
-## Running the code
+### Running the code
 After installing the required programmes. Using the GitBash programme, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.txt. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
@@ -44,14 +44,20 @@ To run the code python should be used. Below is an example of how to run the pro
 $ python pythontest.txt
 Enter LRG file number of interest: 
 ```
-
-the Explain how to run the automated tests for this system
+A numerical value can now be entered into the command line, this value is dependent on what LRG file have been previously downloaded. Only a number can be entered and negative numbers should not be used. See below for invalid entries. After pressing 'ENTER', the software will run automatically and the output will be the ElementTree structure for which the remaining codes are based from to obtain the information to go into the BED file. The second part of the output is a statement to say that the LRG bed file has been created for the gene of interest from the LRG XML file that was input into the software.
 ```
-What does the code do? 
-Describe the code 
+$ python pythontest.txt
+Enter LRG file number of interest: 1
 ```
+Output is the tree structure as well as:
+```
+LRG_1.bed file created for the gene COL1A1 from the LRG_1.xml file
+```
+The potential differences between the output would be the BED file name, gene name and XML file name.
 ### The tests and their functions
 What are the tests?
+Validation of input
+
 ??google pytest see if can include one of these 
 
 ## The output of the code
@@ -61,7 +67,7 @@ What to expect?
 Before selecting an LRG of interest, use LRG_1 as a verification of the code. 
 
 ## Future considerations
-- Have an automated process to extract XML files from the LRG website.
+- Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - 
 
 ## Authors
