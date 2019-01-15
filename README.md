@@ -1,4 +1,5 @@
 # Programming Module Assignment 
+# Section 1:
 ## The user manual
 The assignment for the programming module (BIOL68400) was to create a software that generates a Browser Extensible Data (BED) file from a file in a XML format containing Locus Reference Genomic (LRG) data of a region of interest. 
 The XML file was obtained from the [LRG website](https://www.lrg-sequence.org/index.html).
@@ -26,7 +27,8 @@ The first column contains the chromosome number, the second the start position a
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
-### Running the code
+# Section 2:
+## Running the code
 After installing the required programmes. Using the GitBash programme, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.txt. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
@@ -54,17 +56,18 @@ Output is the tree structure as well as:
 LRG_1.bed file created for the gene COL1A1 from the LRG_1.xml file
 ```
 The potential differences between the output would be the BED file name, gene name and XML file name.
-### The tests and their functions
+
+# Section 3:
+## The tests and their functions
+### Input validation
 What are the tests?
-Validation of input
+The main tests incorporated into this software is to confirm that it responds correctly to all kinds of inputs.
 
-??google pytest see if can include one of these 
+??google pytest see if can add anymore tests
 
-## The output of the code
-What to expect?
-
-## Verification LRG
+### Verification of the software
 Before selecting an LRG of interest, use LRG_1 as a verification of the code. 
+Another test is a visual test to check that the code is running properly after being downloaded. This requires the user to firstly download the LRG_1 file from the [LRG website](https://www.lrg-sequence.org/index.html) to the correct XML_files folder. The software can then be run using python 
 
 ## Future considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
