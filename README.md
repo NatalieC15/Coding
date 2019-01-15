@@ -1,6 +1,5 @@
-# Programming Module Assignment 
+# Programming Module Assignment - The user manual 
 # Section 1:
-## The user manual
 The assignment for the programming module (BIOL68400) was to create a software that generates a Browser Extensible Data (BED) file from a file in a XML format containing Locus Reference Genomic (LRG) data of a region of interest. 
 The XML file was obtained from the [LRG website](https://www.lrg-sequence.org/index.html).
 The LRG website provides manually curated, stable reference sequences that have been generated and maintained by NCBI and EMBL-EBL. These reference sequences are designed in order to report variants consistently according to clinical reporting standards. LRG provides annotation and mapping data that define the relationship between the LRG "fixed" section sequences, the genome reference assembly (both GRCh37 and GRCh38) and all the known transcripts from RefSeq and GENCODE. The "fixed" section contains the stable genomic DNA sequence for the region of interest (ROI), transcripts and proteins that are essential for reporting variants and a specific LRG exon numbering system. These highly structured records are accessible through an extensible mark-up language i.e. the XML format. (reference https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965024/)
