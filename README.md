@@ -76,7 +76,7 @@ Another test is a visual test to check that the code is running properly after b
 * **Natalie Card**
 * **Rebecca Sadler**
 
-The main [contributors](https://github.com/NatalieC15/Coding/graphs/contributors) who participated in this project.
+The main [contributors](https://github.com/NatalieC15/Coding/graphs/contributors) who equally participated in this project.
 
 
 
