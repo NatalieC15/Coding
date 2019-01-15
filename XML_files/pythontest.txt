@@ -73,14 +73,15 @@ while True:
 				#Creation of the .bed file:
 				#This code produced a bed file that contains 3 columns the chr number, the start coordinate of the exons, the end coordinate of the exons
 				#Further improvement would be to extract the genomic coordinates of the exons (potentially add the chromstart number to all values in column 2 and 3)
-				f = open("lrg.bed", "w")
+				bed_file = 'LRG_' + LRG_file_number + '.bed'
+				f = open(bed_file, "w")
 				f.write("Chrom" + "\t" + "Start" + "\t" + "End" + "\n")
 				for i in range(len(start)):
 					f.write(str(chrom) + "\t" + str(start[i]) + "\t" + str(end[i]) + "\n")
 				f.close()
 
 				#The print code to give an output to say that the bed file has been created:
-				print('lrg.bed file created for the gene',lrg_locus.text,'from the',LRG_file_name,'file')
+				print(bed_file,'file created for the gene',lrg_locus.text,'from the',LRG_file_name,'file')
 
 			#The alternative output for the second test code for when the file has not been saved correctly:
 			except:
