@@ -132,8 +132,24 @@ def chromosome_find():
 	return chrom, chromstart, chromend
 ```
 The purpose of this second function is to obtain the chromosome number, start and end coordinates within the XML file.
-These codes were tested against LRG_1.xml to confirm that they were working correctly....
+These codes were tested against LRG_1.xml to confirm that they were working correctly. 
 
+To do this a test folder was created, in the XML_files folder, which contains two files. The first lrg1.py contains all the code required to make the BED file from create_bed.py without the verification steps and the additional steps such as the code to change the BED file name depending on the XML file used. This ws done to simplify the process of creating the tests. 
+
+The second file, test_lrg1.py contains the code to test the functions. Both tests check that the functions produce the output that is expected when using the LRG_1.xml file. 
+```
+def test_exon_find(self):
+        result1 = lrg1.exon_find()
+        self.assertEqual( result1, (['5001', '6693', '7050', '7187', '7313', '8136', '8435', '8638', '8855', '9407', '9577', '9970', '10112', '10273', '10441', '10664', '10975', '11162', '11310', '11540', '11812', '12014', '12193', '12457', '12599', '13593', '13790', '13947', '14112', '14616', '14754', '15150', '15716', '16044', '16260', '16532', '16728', '16908', '17102', '17365', '17630', '17845', '18003', '18491', '18657', '19103', '19518', '19718', '20133', '20620', '20992', '5001', '6693', '7050', '7187', '7313', '8136', '8435', '8638', '8855', '9407', '9577', '9970', '10112', '10273', '10441', '10664', '10975', '11162', '11310', '11540', '11812', '12014', '12193', '12457', '12599', '13593', '13790', '13947', '14112', '14616', '14754', '15150', '15716', '16044', '16260', '16532', '16728', '16908', '17102', '17365', '17630', '17845', '18003', '18491', '18657', '19103', '19518', '19718', '20133', '20620', '20992'], ['5229', '6887', '7084', '7222', '7414', '8207', '8479', '8691', '8908', '9460', '9630', '10023', '10156', '10326', '10485', '10717', '11073', '11206', '11408', '11593', '11919', '12067', '12291', '12510', '12697', '13646', '13843', '14000', '14165', '14660', '14852', '15257', '15823', '16097', '16313', '16639', '16781', '16961', '17263', '17472', '17737', '17898', '18110', '18544', '18764', '19156', '19625', '20000', '20323', '20862', '22544', '5229', '6887', '7084', '7222', '7414', '8207', '8479', '8691', '8908', '9460', '9630', '10023', '10156', '10326', '10485', '10717', '11073', '11206', '11408', '11593', '11919', '12067', '12291', '12510', '12697', '13646', '13843', '14000', '14165', '14660', '14852', '15257', '15823', '16097', '16313', '16639', '16781', '16961', '17263', '17472', '17737', '17898', '18110', '18544', '18764', '19156', '19625', '20000', '20323', '20862', '22544']))
+```
+This test asserts that the output of the exon_find() function when LRG_1.xml is used as an input should be the two lists with the start and end points of each exon. If the values in the list do not match when the test is run it will fail as it is not extracting the correct information. 
+
+```
+ def test_chromosome_find(self):
+        result = lrg1.chromosome_find()
+        self.assertEqual( result, ('17' , '48259457', '48284000'))
+```
+This test asserts that the output of the chromosome_find() function when LRG_1.xml is used as an input should be ( '17', '48259457', '48284000'), which correspond to the chromosome number, the gene start coordinates and gene end coordinates. If this is not the case the test fails as it is not extracting the correct information. 
 
 ### Verification of the software
 Before selecting an LRG of interest, use LRG_1 as a verification of the code to check that the software is running properly after installation of the programme. This LRG_1.xml file has previously been downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is accessible in the GitHub repository.
