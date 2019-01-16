@@ -1,5 +1,5 @@
 # Programming Module Assignment - The user manual 
-## Section 1: The user requirements
+## The user requirements
 The assignment for the programming module (BIOL68400) was to create a software that generates a Browser Extensible Data (BED) file from a file in a XML format containing Locus Reference Genomic (LRG) data of a region of interest (ROI).
 
 An XML file covering the ROI can be obtained from the [LRG website](https://www.lrg-sequence.org/index.html).
@@ -35,13 +35,13 @@ On top of generating the BED file the other user requirements for this assignmen
    - Evidence of good use of GitHub
    - Usability of the code 
 
-## Section 2: Getting Started (Becca part)
+## Getting Started (Becca part)
 Instructions to get the a copy of the project up and running for development and testing purposes
 ### Prerequisites (What needs to be installed to run the software and how to install them - maybe give examples?)
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
-## Section 3: Running the code
+## Running the code
 After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
@@ -85,7 +85,7 @@ Chrom   Start   End
 $
 ```
 
-## Section 4: The tests and their functions
+## The tests and their functions
 ### Input validation
 The first tests incorporated into this software code confirm that the software responds correctly to all kinds of inputs. This is to eliminate human error and ensure that the correct LRG XML file has been selected. 
 The entry of this software is a numerical value which corresponds to a XML file of interest. If any non-numerical value is entered the code will trigger an error and remind the user to enter a numerical value only. See below as an example of when 'one' is entered instead of '1':
@@ -111,11 +111,11 @@ Before selecting an LRG of interest, use LRG_1 as a verification of the code to 
 The user should compare the output after running the software through python to the [LRG_1 webpage](https:ftp.ebi.ac.uk/pub/databases/lrgex/LRG_1.xml) to check that the LRG exon coordinates match. This can be viewed under the LRG_1 transcript section under 'All exons including UTR'.
 
 
-## Section 5: Future considerations
+## Future considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - To gather the GRCh37 coordinates for the start and end of each exon.
 
-## Section 6: Versioning
+## Versioning
 This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. 
 
 ## Authors
