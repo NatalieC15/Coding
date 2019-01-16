@@ -87,7 +87,7 @@ $
 
 ## Section 4: The tests and their functions
 ### Input validation
-The first tests incorporated into this software code confirm that the software responds correctly to all kinds of inputs.
+The first tests incorporated into this software code confirm that the software responds correctly to all kinds of inputs. This is to eliminate human error and ensure that the correct LRG XML file has been selected. 
 The entry of this software is a numerical value which corresponds to a XML file of interest. If any non-numerical value is entered the code will trigger an error and remind the user to enter a numerical value only. See below as an example of when 'one' is entered instead of '1':
 ```
 $ python pythontest.py
@@ -113,8 +113,10 @@ The user should compare the output after running the software through python to 
 
 ## Section 5: Future considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
-- 
+- To gather the GRCh37 coordinates for the start and end of each exon.
 
+## Section 6: Versioning
+This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. 
 
 ## Authors
 * **Natalie Card**
@@ -122,5 +124,6 @@ The user should compare the output after running the software through python to 
 
 The main [contributors](https://github.com/NatalieC15/Coding/graphs/contributors) who equally participated in this project.
 
-
-
+## Acknowledgements
+- [Software Carpentry Workshop](https://anenadic.github.io/2018-11-19-manchester/) team for teaching us how to code using python and GitBash
+- Andy Brass for helping us develop the code
