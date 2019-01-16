@@ -37,12 +37,20 @@ On top of generating the BED file the other user requirements for this assignmen
    - Evidence of good use of GitHub
    - Usability of the code 
 
-## Getting Started (Becca part)
+## Getting Started 
 Instructions to get the a copy of the project up and running for development and testing purposes
-### Prerequisites (What needs to be installed to run the software and how to install them - maybe give examples?)
+.
+### Prerequisites 
+The programs used in the creation and running of the code were: 
+
+The Bash Shell - A shell which is commonly used to increase speed of tasks such as reading and executing commands from a file.
+Git - A version control software, which links the code to an online repository and allows tracking of what changes are made and who makes them. 
+Text Editor - Any text editor, such as notepad, notepad ++ and Atom. Different text editors have differnt functions which may make the process of writing code easier, e.g.  automatic color-coding of key words.
+Python - This is the coding language used throughout the project. 
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
+please make sure you install Python version 3.x 
 ## Running the code
 After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the create_bed.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
