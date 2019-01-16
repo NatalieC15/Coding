@@ -28,7 +28,7 @@ The first column contains the chromosome number, the second the start position a
 
 # Section 2:
 ## Running the code
-After installing the required programmes. Using the GitBash programme, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.txt. As a check to determine that the user is in the correct directory the ls command should be used. See below:
+After installing the required programmes. Using the GitBash programme, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
 $ cd Desktop/Coding/XML_files/
@@ -37,17 +37,17 @@ $ ls
 ```
 The output of this code would be:
 ```
-LRG_1.xml pythontest.txt
+LRG_1.xml pythontest.py
 ```
 To run the code python should be used. Below is an example of how to run the programme and what the output of this should be:
 ```
 ~/Desktop/Coding/XML_files (master)
-$ python pythontest.txt
+$ python pythontest.py
 Enter LRG file number of interest: 
 ```
 A numerical value can now be entered into the command line, this value is dependent on what LRG file have been previously downloaded. Only a number can be entered and negative numbers should not be used. See below for invalid entries. After pressing 'ENTER', the software will run automatically and the output will be the ElementTree structure for which the remaining codes are based from to obtain the information to go into the BED file. The second part of the output is a statement to say that the LRG bed file has been created for the gene of interest from the LRG XML file that was input into the software.
 ```
-$ python pythontest.txt
+$ python pythontest.py
 Enter LRG file number of interest: 1
 ```
 Output is the tree structure as well as:
@@ -59,9 +59,23 @@ The potential differences between the output would be the BED file name, gene na
 # Section 3:
 ## The tests and their functions
 ### Input validation
-What are the tests?
-The main tests incorporated into this software is to confirm that it responds correctly to all kinds of inputs.
+The first tests incorporated into this software code confirm that the software responds correctly to all kinds of inputs.
+The entry of this software is a numerical value which corresponds to a XML file of interest. If any non-numerical value is entered the code will trigger an error and remind the user to enter a numerical value only. See below as an example:
+```
+$ python pythontest.py
+Enter LRG file number of interest: one
+Invalid input, please enter a numeric value 
+Enter LRG file number of interest:_
+```
+The output is expressed if a symbol is entered as well e.g. !"£$%^&*()
 
+The second input test determines whether or not the XML file has been downloaded by the user correctly. The output of the test when there is an error is for the user to then check that the file is located in the correct folder and has been saved in the right format: LRG_(number).xml. For example:
+```
+$ python pythontest.py
+Enter LRG file number of interest: 2
+Error, check the correct LRG XML file has been downloaded from https://www.lrg.sequence.org/, saved into the right folder (i.e. XML_files) with the correct format (e.g. LRG_1.xml).
+```
+### Function tests
 ??google pytest see if can add anymore tests
 
 ### Verification of the software
@@ -71,6 +85,7 @@ Another test is a visual test to check that the code is running properly after b
 ## Future considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - 
+
 
 ## Authors
 * **Natalie Card**
