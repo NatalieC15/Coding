@@ -59,11 +59,17 @@ while True:
 
 				#Finding the chromosome number, start and end coordinates within the XML file, this finds the build number GRCh37.p13 for LRG_1.xml file but may not converse for every file.
 				#May need to find a way to pull only the GRCh37 build in the future. 
-				for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
-					mapping = annotation_set.find('mapping')
-					chrom = mapping.get('other_name')
-					chromstart = mapping.get('other_start')
-					chromend = mapping.get('other_end')
+				def chromosome_find():
+					for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
+						mapping = annotation_set.find('mapping')
+						global chrom
+						chrom = mapping.get('other_name')
+						global chromstart
+						chromstart = mapping.get('other_start')
+						global chromend
+						chromend = mapping.get('other_end')
+					return chrom, chromstart, chromend
+				chromosome_find()
 
 				#Use the print function to test the at the correct values for chromosome number, genomic start and end coordinates have been collated:
 				#print(chrom, chromstart, chromend)
