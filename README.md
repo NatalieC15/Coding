@@ -1,7 +1,6 @@
 # Programming Module Assignment - The user manual 
 # Creating a BED file from an XML file
 ## The user requirements
-### Purpose
 The assignment for the programming module (BIOL68400) was to create a software that generates a Browser Extensible Data (BED) file from a file in a XML format containing Locus Reference Genomic (LRG) data of a region of interest (ROI).
 
 An XML file covering the ROI can be obtained from the [LRG website](https://www.lrg-sequence.org/index.html).
