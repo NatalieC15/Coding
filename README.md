@@ -106,7 +106,34 @@ Enter LRG file number of interest: 2
 Error, check the correct LRG XML file has been downloaded from https://www.lrg.sequence.org/, saved into the right folder (i.e. XML_files) with the correct format (e.g. LRG_1.xml).
 ```
 ### Function tests
-??google pytest see if can add anymore tests
+Two functions were added to the code of the software the first being: 
+```
+def exon_find():
+	for exon in root.findall(".//fixed_annotation/transcript/exon"):
+		label.append(exon.get('label'))
+		global coordinates
+		coordinates = exon.find('coordinates')
+		start.append(coordinates.get('start'))
+		end.append(coordinates.get('end'))
+	return coordinates, start, end 
+```
+The purpose of this function is to find the exon number and start and end coordinates of each exon within the sequence of interest. 
+The second function was:
+```
+def chromosome_find():
+	for annotation_set in root.findall(".//updatable_annotation/annotation_set[@type='lrg']"):
+		mapping = annotation_set.find('mapping')
+		global chrom
+		chrom = mapping.get('other_name')
+		global chromstart
+		chromstart = mapping.get('other_start')
+		global chromend
+		chromend = mapping.get('other_end')
+	return chrom, chromstart, chromend
+```
+The purpose of this second function is to obtain the chromosome number, start and end coordinates within the XML file.
+These codes were tested against LRG_1.xml to confirm that they were working correctly....
+
 
 ### Verification of the software
 Before selecting an LRG of interest, use LRG_1 as a verification of the code to check that the software is running properly after installation of the programme. This LRG_1.xml file has previously been downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is accessible in the GitHub repository.
