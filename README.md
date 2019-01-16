@@ -44,7 +44,7 @@ Instructions to get the a copy of the project up and running for development and
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
 ## Running the code
-After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the pythontest.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
+After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the create_bed.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
 $ cd Desktop/Coding/XML_files/
@@ -53,17 +53,17 @@ $ ls
 ```
 The output of this code would be:
 ```
-LRG_1.xml pythontest.py
+LRG_1.xml create_bed.py
 ```
 To run the code python should be used. Below is an example of how to run the programme and what the output of this should be:
 ```
 ~/Desktop/Coding/XML_files (master)
-$ python pythontest.py
+$ python create_bed.py
 Enter LRG file number of interest: 
 ```
 A numerical value can now be entered into the command line, this value is dependent on which LRG file has been previously downloaded. Only a number can be entered and negative numbers should not be used. See Section 4 for examples of error messages for invalid entries. After pressing 'ENTER', the software will run automatically and the output will be the ElementTree structure for which the remaining codes are based from to obtain the information to go into the BED file. The second part of the output is a statement to say that the LRG bed file has been created for the gene of interest from the LRG XML file that was input into the software.
 ```
-$ python pythontest.py
+$ python create_bed.py
 Enter LRG file number of interest: 1
 ```
 Output is the tree structure as well as:
@@ -92,7 +92,7 @@ $
 The first tests incorporated into this software code confirm that the software responds correctly to all kinds of inputs. This is to eliminate human error and ensure that the correct LRG XML file has been selected. 
 The entry of this software is a numerical value which corresponds to a XML file of interest. If any non-numerical value is entered the code will trigger an error and remind the user to enter a numerical value only. See below as an example of when 'one' is entered instead of '1':
 ```
-$ python pythontest.py
+$ python create_bed.py
 Enter LRG file number of interest: one
 Invalid input, please enter a numeric value 
 Enter LRG file number of interest:_
@@ -101,7 +101,7 @@ The error would also be expressed if a symbol is entered instead e.g. !"£$%^&*(
 
 The second input test determines whether or not the XML file has been downloaded by the user correctly. The output of the test when there is an error is for the user to then check that the file is located in the correct folder and has been saved in the right format e.g. LRG_(number).xml. An example is:
 ```
-$ python pythontest.py
+$ python create_bed.py
 Enter LRG file number of interest: 2
 Error, check the correct LRG XML file has been downloaded from https://www.lrg.sequence.org/, saved into the right folder (i.e. XML_files) with the correct format (e.g. LRG_1.xml).
 ```
