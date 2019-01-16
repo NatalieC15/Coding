@@ -1,17 +1,19 @@
 # Programming Module Assignment - The user manual 
+# Creating a BED file from an XML file
 ## The user requirements
+### Purpose
 The assignment for the programming module (BIOL68400) was to create a software that generates a Browser Extensible Data (BED) file from a file in a XML format containing Locus Reference Genomic (LRG) data of a region of interest (ROI).
 
 An XML file covering the ROI can be obtained from the [LRG website](https://www.lrg-sequence.org/index.html).
-LRG provides manually curated, stable reference sequences that have been generated and maintained by NCBI and EMBL-EBL. These reference sequences are designed in order to report variants consistently according to clinical reporting standards. LRG provides annotation and mapping data that define the relationship between the LRG "fixed" section sequences, the genome reference assembly (both GRCh37 and GRCh38) and all the known transcripts from RefSeq and GENCODE. The "fixed" section contains the stable genomic DNA sequence for the ROI, transcripts and proteins that are essential for reporting variants and a specific LRG exon numbering system. These highly structured records are accessible through an extensible mark-up language i.e. the XML format. (reference https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965024/)
+LRG provides manually curated, stable reference sequences that have been generated and maintained by NCBI and EMBL-EBL. These reference sequences are designed in order to report variants consistently according to clinical reporting standards. LRG provides annotation and mapping data that define the relationship between the LRG "fixed" section sequences, the genome reference assembly (both GRCh37 and GRCh38) and all the known transcripts from RefSeq and GENCODE. The "fixed" section contains the stable genomic DNA sequence for the ROI, transcripts and proteins that are essential for reporting variants and a specific LRG exon numbering system. These highly structured records are accessible through an extensible mark-up language i.e. the XML format.[1](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965024/)
 
 A BED file is a flexible way of defining data lines displayed in an annotation track. There are three required fields that form a BED file:
 - chrom - which is the chromosome name that the reference sequence is on
 - chromStart - which is the starting position of the sequence within the chromosome 
 - chromEnd - which is the end position of the feature within the chromosome
-There are nine optional fields of a BED file: name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts. For this assignment only the three required fields were of interest. 
-(reference https://genome.ucsc.edu/FAQ/FAQformat.html#format1) 
+There are nine optional fields of a BED file: name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts.[2](https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
 
+For this assignment only the three required fields were of interest.
 An example of a BED file with just the required fields would be:
 ```
 chr7  127471196 127472363
@@ -22,6 +24,7 @@ chr7  127475864 127477031
 ```
 The first column contains the chromosome number, the second the start position and the third the end position. 
 
+### Extra requirements
 On top of generating the BED file the other user requirements for this assignment were divided into three areas:
 - Quality of the documentation:
    - comments in the code 
@@ -109,7 +112,6 @@ Error, check the correct LRG XML file has been downloaded from https://www.lrg.s
 ### Verification of the software
 Before selecting an LRG of interest, use LRG_1 as a verification of the code to check that the software is running properly after installation of the programme. This LRG_1.xml file has previously been downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is accessible in the GitHub repository.
 The user should compare the output after running the software through python to the [LRG_1 webpage](https:ftp.ebi.ac.uk/pub/databases/lrgex/LRG_1.xml) to check that the LRG exon coordinates match. This can be viewed under the LRG_1 transcript section under 'All exons including UTR'.
-
 
 ## Future considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
