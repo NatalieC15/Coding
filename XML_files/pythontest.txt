@@ -44,11 +44,15 @@ while True:
 				end = []
 				label = []
 				#creation of lists for the exon number, and the start and end coordinates of the exons of the gene of interest.
-				for exon in root.findall(".//fixed_annotation/transcript/exon"):
-					label.append(exon.get('label'))
-					coordinates = exon.find('coordinates')
-					start.append(coordinates.get('start'))
-					end.append(coordinates.get('end'))
+				def exon_find():
+					for exon in root.findall(".//fixed_annotation/transcript/exon"):
+						label.append(exon.get('label'))
+						global coordinates
+						coordinates = exon.find('coordinates')
+						start.append(coordinates.get('start'))
+						end.append(coordinates.get('end'))
+					return coordinates, start, end 
+				exon_find()
 
 				#Use the print function to test the list creation for label, start and end:
 				#print (label, start, end)
