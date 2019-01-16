@@ -51,7 +51,7 @@ while True:
 						coordinates = exon.find('coordinates')
 						start.append(coordinates.get('start'))
 						end.append(coordinates.get('end'))
-					return coordinates, start, end 
+					return start, end 
 				exon_find()
 
 				#Use the print function to test the list creation for label, start and end:
