@@ -51,14 +51,16 @@ Text Editor - Any text editor can be used, such as notepad, notepad ++ and Atom.
 
 Python - This is the coding language used throughout the project. 
 
-Therefore, it is advised that in order to utilise the code these, or equivalent software, are downloaded on the computer being used.
+Therefore, it is advised that in order to utilise the code this software, or equivalent, should be downloaded.
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
 Installing the bash shell and Git:
+
 On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). 
 
 Installing python:
+
 Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. 
 
 Setting up "HOME" environment variable in the bash shell: 
