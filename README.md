@@ -237,9 +237,9 @@ This test asserts that the output of the chromosome_find() function when LRG_1.x
 
 To run the test use the following: 
 ```
-cd Test
+$ cd Test
 # use this to move into the test folder from XML_files. 
-python test_lrg1.py
+$ python test_lrg1.py
 ```
 
 If the test is correct the following should be displayed: 
