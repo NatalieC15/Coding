@@ -32,10 +32,3 @@ def chromosome_find():
 	return chrom, chromstart, chromend
 
 chromosome_find()
-	
-f = open("lrg.bed", "w")
-f.write("Chrom" + "\t" + "Start" + "\t" + "End" + "\n")
-for i in range(len(start)):
-	f.write(str(chrom) + "\t" + str(start[i]) + "\t" + str(end[i]) + "\n")
-
-f.close()
