@@ -55,7 +55,7 @@ Therefore, it is advised that in order to utilise the code this software, or equ
 
 ### Installing
 
-### Installing the bash shell and Git:
+#### Installing the bash shell and Git:
 
 On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). When installing Git be sure to keep "Use Git from the Windows Command Prompt", "Checkout Windows-style, commit Unix-style line endings" and "Use Windows' default console window" selected. 
 
