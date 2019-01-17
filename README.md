@@ -69,9 +69,10 @@ Setting up Github:
 
 Downloading the repository: 
 
+Before continuing it is recommended that at an XML file of interest is downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is saved to the XML_files folder on your Desktop in the format LRG_(x).xml, where (x) is a numerical value. When saving the file watch out for the capital and lower-case letters and make sure they are correct. Although it is possible to continue if the file of interest include LRG_1.xml, LRG_16.xml or LRG_120.xml as these have previously been downloaded to the XML_files folder as they were used for validation and verification purposes.
 
 ## Running the code
-After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the create_bed.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
+After installing the required programmes. Using GitBash, the 'cd' command should be entered to move to the correct directory that contains both the XML file of interest and the create_bed.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
 ~
 $ cd Desktop/Coding/XML_files/
