@@ -43,7 +43,7 @@ Instructions to get the a copy of the project up and running for development and
 ### Prerequisites 
 The programs used in the creation and running of the code were: 
 
-The Bash Shell - A shell which is commonly used to increase speed of tasks such as reading and executing commands from a file.
+The Bash Shell - A standard command processor that allows the user to type commands that do tasks such as reading and executing commands from a file.
 
 Git - A version control software, which links the code to an online repository and allows tracking of what changes are made and who makes them. 
 
