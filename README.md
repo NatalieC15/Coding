@@ -136,7 +136,7 @@ $ ls
 ```
 The output of this code would be:
 ```
-LRG_1.xml create_bed.py
+Test    LRG_1.bed    LRG_1.xml    LRG_120.xml    LRG_16.xml    create_bed.py 
 ```
 To run the code python should be used. Below is an example of how to run the programme and what the output of this should be:
 ```
@@ -153,7 +153,7 @@ Output is the tree structure as well as:
 ```
 LRG_1.bed file created for the gene COL1A1 from the LRG_1.xml file
 ```
-The potential differences between the output would be the BED file name, gene name and XML file name.
+The potential differences between the output would be the BED file, gene and XML file name.
 
 To view the BED file created the less command can be used, to quit viewing the BED file press 'q':
 ```
@@ -180,7 +180,7 @@ Enter LRG file number of interest: one
 Invalid input, please enter a numeric value 
 Enter LRG file number of interest:_
 ```
-The error would also be expressed if a symbol is entered instead e.g. !"£$%^&*().
+This error would also be printed if a symbol is entered instead e.g. !"£$%^&*().
 
 The second input test determines whether or not the XML file has been downloaded by the user correctly. The output of the test when there is an error is for the user to then check that the file is located in the correct folder and has been saved in the right format e.g. LRG_(number).xml. An example is:
 ```
@@ -216,9 +216,9 @@ def chromosome_find():
 ```
 The purpose of this second function is to obtain the chromosome number, start and end coordinates within the XML file.
 
-These codes were tested against LRG_1.xml to confirm that they were working correctly. To do this a test folder was created, in the XML_files folder, which contains two files. The first lrg1.py contains all the code required to make the BED file from create_bed.py without the verification steps and the additional steps such as the code to change the BED file name depending on the XML file used. 
+These codes were tested against LRG_1.xml to confirm that they were working correctly. To do this a test folder was created, in the XML_files folder, which contains two files. The first lrg1.py contains the codes for the functions required to make the BED file from create_bed.py without the verification steps and the additional steps such as the code to change the BED file name depending on the XML file used.
 
-The second file, test_lrg1.py contains the code to test the functions. Both tests check that the functions produce the output that is expected when using the LRG_1.xml file. Therefore, if a test fails is it as the functions are not extracting the correct information from LRG_1.xml file.
+The second file, test_lrg1.py contains the code to test the functions. Both tests check that the functions produce the output that is expected when using the LRG_1.xml file. Therefore, if a test fails it is because the functions are not extracting the correct information from LRG_1.xml file.
 
 The test for the exon_find() function is:
 ```
@@ -251,13 +251,13 @@ Ran 2 tests in 0.002s
 
 OK
 ```
-Other LRG.xml files can be tested by changing the code. To do this, first ensure there is a copy of the XML file that you want to use to test. Then go into the lrg1.py script and edit the following part of the code: 
+Other LRG.xml files can be tested by changing the code. To do this, first ensure there is a copy of the XML file that you want to use to test within the Test folder. Then edit the lrg1.py script by swapping out 1 in LRG_1.xml for the LRG number of the XML file you want to use to test with: 
 ```
 import xml.etree.ElementTree as ET
 tree = ET.parse('LRG_1.xml')
 root = tree.getroot()
 ```
-Just swap out 1 in LRG_1.xml for the LRG number of the XML file you want to use to test with. 
+For example swap 'LRG_1.xml' with 'LRG_16.xml'.
 
 Then go into test_lrg1.py and edit the following code: 
 ```
@@ -283,7 +283,7 @@ The user should compare the output after running the software through python to 
 ## Future improvements and considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - To gather the GRCh37 coordinates for the start and end of each exon.
-- To find a way to run the test script using create_bed.py as a reference rather than the lrg1.py. This was not done for this as we were unable to get the test script to link to create_bed.py due to issues with the XML file input. 
+- To find a way to run the test script using create_bed.py as a reference rather than the lrg1.py. This was not done for this as we were unable to get the test script to link to create_bed.py due to issues with the XML file input.
 
 ## Versioning
 This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. However when making the software different versions were commited to Github to show the progression of the software development.
@@ -295,5 +295,5 @@ This is the only version of this software as it is an assignment due on 18/01/19
 The main [contributors](https://github.com/NatalieC15/Coding/graphs/contributors) who equally participated in this project.
 
 ## Acknowledgements
-- [Software Carpentry Workshop](https://anenadic.github.io/2018-11-19-manchester/) team for teaching us how to code using python and GitBash
-- Andy Brass for helping us develop the code
+- [Software Carpentry Workshop](https://anenadic.github.io/2018-11-19-manchester/) team for teaching us how to code using python and GitBash.
+- Andy Brass for helping us develop the code.
