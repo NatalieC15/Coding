@@ -77,8 +77,9 @@ Installing a text editor:
 
 This is not neccessary as text editors such as notepad will work, however using another text editor may make it easier to use and modify the code. Below are links to the download sites for a couple of editors: 
 
-[Atom](https://atom.io/)
-[Notepad ++](https://notepad-plus-plus.org/download/v7.6.2.html) 
+- [Atom](https://atom.io/)
+
+- [Notepad ++](https://notepad-plus-plus.org/download/v7.6.2.html) 
 
 Simply download the correct installation for the computer being used and follow installation instructions.
 
