@@ -90,11 +90,32 @@ Anaconda can be downloaded from [here](https://www.anaconda.com/download). It sh
 Setting up Github on your computer: 
 
 To set up Github you first need to create an account on [GitHub](https://github.com/). 
+To configure Git on the computer use the following in the shell:
+```
+$ git config --global user.name "Your Name" 			
+$ git config --global user.email yourname@yourplace.org
+```
+Be sure to put quotes (") around your name. 
+
+It is also possible to assign a default text editor to be used by typing the following: 
+```
+$ git config --global core.editor notepad	#replace notepad with your editor of choice
+```
 
 Downloading the repository: 
 
 Once the above is set up on the computer the repository can be cloned, which creates a local instance of the repository on the computer being used. 
 
+To do this you need to find the link to the repository, which can be found by . 
+Using this execute the following command in GitBash:
+```
+$ git clone https://github.com/<USERNAME>/papers.git 
+``` 
+
+If the repository is cloned successfully there should be something like the following returned:
+```
+
+```
 Downloading the LRG.xml file of interest: 
 
 Before continuing it is recommended that at an XML file of interest is downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is saved to the XML_files folder on your Desktop in the format LRG_(x).xml, where (x) is a numerical value. When saving the file watch out for the capital and lower-case letters and make sure they are correct. It is possible to continue without downloading an XML file if the file of interest is LRG_1.xml, LRG_16.xml or LRG_120.xml as these have previously been downloaded to the XML_files folder as they were used for validation and verification purposes.
