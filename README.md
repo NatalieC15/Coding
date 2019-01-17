@@ -57,7 +57,7 @@ Therefore, it is advised that in order to utilise the code this software, or equ
 
 #### Installing the bash shell and Git:
 
-On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). When installing Git be sure to keep "Use Git from the Windows Command Prompt", "Checkout Windows-style, commit Unix-style line endings" and "Use Windows' default console window" selected. 
+On windows, the bash shell (GitBash) and Git can be downloaded together from [here](https://gitforwindows.org/). When installing Git be sure to keep "Use Git from the Windows Command Prompt", "Checkout Windows-style, commit Unix-style line endings" and "Use Windows' default console window" selected. 
 
 #### Setting up "HOME" environment variable in the bash shell: 
 
@@ -87,7 +87,7 @@ Simply download the correct installation for the computer being used and follow 
 
 Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. Then follow the installation instructions.
 
-#### Setting up Github on your computer: 
+#### Setting up Git on your computer: 
 
 To set up Github you first need to configure Git on the computer using the following in GitBash:
 ```
@@ -101,11 +101,11 @@ It is also possible to assign a default text editor to be used by typing the fol
 $ git config --global core.editor notepad	#replace notepad with your editor of choice
 ```
 
-#### Downloading the repository: 
+#### Downloading the repository from Github: 
 
 Once the above is set up on the computer the repository can be cloned, which creates a local instance of the repository on the computer being used. At this point it may be useful to create an account on [GitHub](https://github.com/). 
 
-To clone the repository you need to find the link to the repository, which can be found by clicking the green clone/download button on the right of the screen when looking at the repository. The link found here is used in the following command in the shell:  
+To clone the repository you need to find the link to the repository, which can be found by clicking the green clone/download button on the right of the screen when looking at the repository. The link found here is used in the following command in GitBash:  
 
 ```
 $ git clone https://github.com/<USERNAME>/papers.git 
