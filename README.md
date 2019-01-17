@@ -73,9 +73,18 @@ SUCCESS: Specified value was saved.
 ```
 Then exit the command prompt by typing exit followed by pressing enter. 
 
+Installing a text editor:
+
+This is not neccessary as text editors such as notepad will work, however using another text editor may make it easier to use and modify the code. Below are links to the download sites for a couple of editors: 
+
+[Atom](https://atom.io/)
+[Notepad ++](https://notepad-plus-plus.org/download/v7.6.2.html) 
+
+Simply download the correct installation for the computer being used and follow installation instructions.
+
 Installing python:
 
-Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. 
+Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. Then follow the installation instructions.
 
 Setting up Github: 
 
