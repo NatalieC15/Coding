@@ -106,15 +106,21 @@ Downloading the repository:
 
 Once the above is set up on the computer the repository can be cloned, which creates a local instance of the repository on the computer being used. 
 
-To do this you need to find the link to the repository, which can be found by . 
-Using this execute the following command in GitBash:
+To do this you need to find the link to the repository, which can be found by clicking the green clon/download button on the right of the screen when looking at the repository. The link found here can be used in the following command:  
+
 ```
 $ git clone https://github.com/<USERNAME>/papers.git 
 ``` 
 
 If the repository is cloned successfully there should be something like the following returned:
 ```
-
+Cloning into 'Coding'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (16/16), done.
+remote: Total 259 (delta 3), reused 0 (delta 0), pack-reused 243
+Receiving objects: 100% (259/259), 111.43 KiB | 594.00 KiB/s, done.
+Resolving deltas: 100% (83/83), done.
 ```
 Downloading the LRG.xml file of interest: 
 
