@@ -215,6 +215,7 @@ The user should compare the output after running the software through python to 
 ## Future improvements and considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - To gather the GRCh37 coordinates for the start and end of each exon.
+- To find a way to run the test script using create_bed.py as a reference rather than the lrg1.py. This was not done for this as we were unable to get the test script to link to create_bed.py due to issues with the XML file input. 
 
 ## Versioning
 This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. However when making the software different versions were commited to Github to show the progression of the software development.
