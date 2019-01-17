@@ -185,12 +185,12 @@ This test asserts that the output of the chromosome_find() function when LRG_1.x
 Before selecting an LRG of interest, use LRG_1 as a verification of the code to check that the software is running properly after installation of the programme. This LRG_1.xml file has previously been downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is accessible in the GitHub repository.
 The user should compare the output after running the software through python to the webpage http://ftp.ebi.ac.uk/pub/databases/lrgex/LRG_1.xml to check that the LRG exon coordinates match. This can be viewed under the LRG_1 transcript section under 'All exons including UTR'.
 
-## Future considerations
+## Future improvements and considerations
 - Have an automated process to extract XML files from the [LRG website](https://www.lrg-sequence.org/index.html), rather than having to manually download them. This is likely to eliminate the likelihood of introducing human error.
 - To gather the GRCh37 coordinates for the start and end of each exon.
 
 ## Versioning
-This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. 
+This is the only version of this software as it is an assignment due on 18/01/19 and so will not be reviewed or edited in the future. However when making the software different versions were commited to Github to show the progression of the software development.
 
 ## Authors
 * **Natalie Card**
