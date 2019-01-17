@@ -55,11 +55,11 @@ Therefore, it is advised that in order to utilise the code this software, or equ
 
 ### Installing
 
-Installing the bash shell and Git:
+## Installing the bash shell and Git:
 
 On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). When installing Git be sure to keep "Use Git from the Windows Command Prompt", "Checkout Windows-style, commit Unix-style line endings" and "Use Windows' default console window" selected. 
 
-Setting up "HOME" environment variable in the bash shell: 
+## Setting up "HOME" environment variable in the bash shell: 
 
 To ensure that the "HOME" environment variable is set up on the bash shell, please do the following steps: 
 
@@ -73,7 +73,7 @@ SUCCESS: Specified value was saved.
 ```
 Then exit the command prompt by typing exit followed by pressing enter. 
 
-Installing a text editor:
+## Installing a text editor:
 
 This is not neccessary as text editors such as notepad will work, however using another text editor may make it easier to use and modify the code. Below are links to the download sites for a couple of editors: 
 
@@ -83,14 +83,13 @@ This is not neccessary as text editors such as notepad will work, however using 
 
 Simply download the correct installation for the computer being used and follow installation instructions.
 
-Installing python:
+## Installing python:
 
 Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. Then follow the installation instructions.
 
-Setting up Github on your computer: 
+## Setting up Github on your computer: 
 
-To set up Github you first need to create an account on [GitHub](https://github.com/). 
-To configure Git on the computer use the following in the shell:
+To set up Github you first need to configure Git on the computer using the following in GitBash:
 ```
 $ git config --global user.name "Your Name" 			
 $ git config --global user.email yourname@yourplace.org
@@ -102,11 +101,11 @@ It is also possible to assign a default text editor to be used by typing the fol
 $ git config --global core.editor notepad	#replace notepad with your editor of choice
 ```
 
-Downloading the repository: 
+## Downloading the repository: 
 
-Once the above is set up on the computer the repository can be cloned, which creates a local instance of the repository on the computer being used. 
+Once the above is set up on the computer the repository can be cloned, which creates a local instance of the repository on the computer being used. At this point it may be useful to create an account on [GitHub](https://github.com/). 
 
-To do this you need to find the link to the repository, which can be found by clicking the green clon/download button on the right of the screen when looking at the repository. The link found here can be used in the following command:  
+To clone the repository you need to find the link to the repository, which can be found by clicking the green clone/download button on the right of the screen when looking at the repository. The link found here is used in the following command in the shell:  
 
 ```
 $ git clone https://github.com/<USERNAME>/papers.git 
