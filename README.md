@@ -209,6 +209,21 @@ The test for the chromosome_find() function is:
 ```
 This test asserts that the output of the chromosome_find() function when LRG_1.xml is used as an input should be ( '17', '48259457', '48284000'), which corresponds to the chromosome number, the gene start coordinates and gene end coordinates. If this is not the case the test fails as it is not extracting the correct information. 
 
+To run the test use the following: 
+```
+cd Test
+# use this to move into the test folder from XML_files. 
+python test_lrg1.py
+```
+
+If the test is correct the following should be displayed: 
+```
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+```
 Other LRG.xml files can be tested by changing the code. To do this, first ensure there is a copy of the XML file that you want to use to test. Then go into the lrg1.py script and edit the following part of the code: 
 ```
 import xml.etree.ElementTree as ET
