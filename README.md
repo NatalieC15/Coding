@@ -9,7 +9,8 @@ LRG provides manually curated, stable reference sequences that have been generat
 A BED file is a flexible way of defining data lines displayed in an annotation track. There are three required fields that form a BED file:
 - chrom - which is the chromosome name that the reference sequence is on
 - chromStart - which is the starting position of the sequence within the chromosome 
-- chromEnd - which is the end position of the feature within the chromosome
+- chromEnd - which is the end position of the feature within the chromosome.
+
 There are nine optional fields of a BED file: name, score, strand, thickStart, thickEnd, itemRgb, blockCount, blockSizes, blockStarts.[2](https://genome.ucsc.edu/FAQ/FAQformat.html#format1)
 
 For this assignment only the three required fields were of interest.
