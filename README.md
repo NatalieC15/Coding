@@ -39,8 +39,8 @@ On top of generating the BED file the other user requirements for this assignmen
    - Usability of the code 
 
 ## Getting Started 
-Instructions to get the a copy of the project up and running for development and testing purposes
-.
+Instructions to get the a copy of the project up and running for development and testing purposes.
+
 ### Prerequisites 
 The programs used in the creation and running of the code were: 
 
