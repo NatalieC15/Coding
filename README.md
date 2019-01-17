@@ -209,6 +209,31 @@ The test for the chromosome_find() function is:
 ```
 This test asserts that the output of the chromosome_find() function when LRG_1.xml is used as an input should be ( '17', '48259457', '48284000'), which corresponds to the chromosome number, the gene start coordinates and gene end coordinates. If this is not the case the test fails as it is not extracting the correct information. 
 
+Other LRG.xml files can be tested by changing the code. To do this, first ensure there is a copy of the XML file that you want to use to test. Then go into the lrg1.py script and edit the following part of the code: 
+```
+import xml.etree.ElementTree as ET
+tree = ET.parse('LRG_1.xml')
+root = tree.getroot()
+```
+Just swap out 1 in LRG_1.xml for the LRG number of the XML file you want to use to test with. 
+
+Then go into test_lrg1.py and edit the following code: 
+```
+    def test_chromosome_find(self):
+        result = lrg1.chromosome_find()
+        self.assertEqual( result, ('a' , 'b', 'c'))
+    
+    def test_exon_find(self):
+        result1 = lrg1.exon_find()
+        self.assertEqual( result1, ('d', 'e'))
+```
+a - chromosome number
+b - gene start coordinates
+c - gene end coordinates
+d - exon start
+e - exon end
+Test_lrg1.py will already have numbers in place of the variables that correspond with the expected values for LRG_1.xml. Therefore, replace the current a, b, c, d and e with the expected values from the XML file of interest. 
+
 ### Verification of the software
 Before selecting an LRG of interest, use LRG_1 as a verification of the code to check that the software is running properly after installation of the programme. This LRG_1.xml file has previously been downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is accessible in the GitHub repository.
 The user should compare the output after running the software through python to the webpage http://ftp.ebi.ac.uk/pub/databases/lrgex/LRG_1.xml to check that the LRG exon coordinates match. This can be viewed under the LRG_1 transcript section under 'All exons including UTR'.
