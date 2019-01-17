@@ -53,7 +53,7 @@ Python - This is the coding language used throughout the project.
 
 Therefore, it is advised that in order to utilise the code this software, or equivalent, should be downloaded.
 
-### Installing (a step by step series of examples that tell you how to get everything running - with examples)
+### Installing
 
 Installing the bash shell and Git:
 
