@@ -55,15 +55,35 @@ Therefore, it is advised that in order to utilise the code this software, or equ
 
 ### Installing
 
+If your "HOME" environment variable is not set (or you don't know what this is):
+Open command prompt (Open Start Menu then type cmd and press [Enter])
+Type the following line into the command prompt window exactly as shown:
+setx HOME "%USERPROFILE%"
+
+Press [Enter], you should see SUCCESS: Specified value was saved.
+Quit command prompt by typing exit then pressing [Enter]
+
 Installing the bash shell and Git:
 
-On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). 
+On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). When installing Git be sure to keep "Use Git from the Windows Command Prompt", "Checkout Windows-style, commit Unix-style line endings" and "Use Windows' default console window" selected. 
+
+Setting up "HOME" environment variable in the bash shell: 
+
+To ensure that the "HOME" environment variable is set up on the bash shell, please do the following steps: 
+
+Open the commmand prompt by opening the Start Menu and typing cmd. Once the command prompt is open type the follwing line and execute: 
+```
+setx HOME "%USERPROFILE%"
+```
+This should result in the following coming up in the command prompt: 
+```
+SUCCESS: Specified value was saved.
+```
+Then exit the command prompt by typing exit followed by pressing enter. 
 
 Installing python:
 
 Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. 
-
-Setting up "HOME" environment variable in the bash shell: 
 
 Setting up Github: 
 
