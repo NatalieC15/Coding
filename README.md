@@ -53,9 +53,12 @@ Python - This is the coding language used throughout the project.
 
 ### Installing (a step by step series of examples that tell you how to get everything running - with examples)
 
+Installing The bash shell and Git:
+On windows, the bash shell and Git can be downloaded together from [here](https://gitforwindows.org/). 
 
+Installing python
+Anaconda can be downloaded from [here](https://www.anaconda.com/download). It should be ensured at this point when chosing the download that python version 3.x is installed, as this is the version used in the creation of this project. 
 
-please make sure you install Python version 3.x 
 ## Running the code
 After installing the required programmes. Using GitBash, the cd command should be entered to move to the correct directory that contains both the XML file of interest and the create_bed.py. As a check to determine that the user is in the correct directory the ls command should be used. See below:
 ```
