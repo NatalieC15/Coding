@@ -122,7 +122,7 @@ remote: Total 259 (delta 3), reused 0 (delta 0), pack-reused 243
 Receiving objects: 100% (259/259), 111.43 KiB | 594.00 KiB/s, done.
 Resolving deltas: 100% (83/83), done.
 ```
-Downloading the LRG.xml file of interest: 
+#### Downloading the LRG.xml file of interest: 
 
 Before continuing it is recommended that at an XML file of interest is downloaded from the [LRG website](https://www.lrg-sequence.org/index.html) and is saved to the XML_files folder on your Desktop in the format LRG_(x).xml, where (x) is a numerical value. When saving the file watch out for the capital and lower-case letters and make sure they are correct. It is possible to continue without downloading an XML file if the file of interest is LRG_1.xml, LRG_16.xml or LRG_120.xml as these have previously been downloaded to the XML_files folder as they were used for validation and verification purposes.
 
@@ -270,10 +270,15 @@ Then go into test_lrg1.py and edit the following code:
         self.assertEqual( result1, ('d', 'e'))
 ```
 a - chromosome number
+
 b - gene start coordinates
+
 c - gene end coordinates
+
 d - exon start
+
 e - exon end
+
 Test_lrg1.py will already have numbers in place of the variables that correspond with the expected values for LRG_1.xml. Therefore, replace the current a, b, c, d and e with the expected values from the XML file of interest. 
 
 ### Verification of the software
